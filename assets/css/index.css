@@ -8,10 +8,11 @@ body {
     text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
     body {
         background-image: url("../images/bg-desktop.svg");
-        background-size: 91.5%;
+        background-size: 82.4rem;
+        /* background-position: center; */
     }
 }
 
@@ -31,12 +32,16 @@ header > img {
     margin: 0 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+    header {
+        width: 92%;
+    }
+
     header > img {
-        width: 15vw;
+        width: 13rem;
         float: left;
-        padding: 0 0;
-        margin: 1.27vw 0;
+        padding: 1.4rem 0.38rem;
+        margin: 0 0;
     }
 }
 
@@ -79,6 +84,7 @@ h1 > span {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 3.8rem;
+    margin: 0 auto;
 }
 
 p {
@@ -104,9 +110,14 @@ section a {
     margin: 1.4rem auto;
 }
 
-@media (min-width: 600px) {
+section a:active {
+    box-shadow: none;       
+}
+
+@media (min-width: 650px) {
     main {
         width: 98.3%;
+        padding-top: 4.05rem;
     }
 
     .mockupsSection {
@@ -115,55 +126,62 @@ section a {
     }
     
     .mockupsSection > img {
-        width: 49.25vw;
-        margin: 9.1vh 0;
+        width: 87.1%;
+        margin: 0rem 0;
     }
     
     .textSection {
         width: 40.2%;
         text-align: left;
-        padding-top: 9vw;
-        /* padding-right: 4vw; */
+        padding-top: 2.517rem;
     }
 
     h1 {
-        font-size: 2.74vw;
+        font-size: 2.44rem;
         font-weight: 600;
-        letter-spacing: 0.058vw;
-        word-spacing: -0.15vw;
-        padding-left: 0.07vw;
-        margin: 1.5vh 0 2vh;
+        line-height: 3.8rem;
+        letter-spacing: 0.075rem;
+        word-spacing: -0.19rem;
+        /* padding-left: 0.07vw;
+        margin: 1.5vh 0 2vh; */
     }
     
-    h2 {
-        font-size: 2.705vw;
+    h1 > span {
+        font-size: 2.44rem;
         font-weight: 600;
-        letter-spacing: 0.06vw;
-        word-spacing: 0.01vw;
-        padding-left: 0.07vw;
-        margin: 4.1vh 0 4.5vh;
+        line-height: 3.7rem;
+        letter-spacing: 0.06rem;
+        word-spacing: -0.05rem;
+        /* padding-left: 0.07vw;
+        margin: 4.1vh 0 4.5vh; */
     }
     
     p {
-        width: 36vw;
-        font-size: 1.248vw;
-        line-height: 3.7vh;
+        width: 89%;
+        font-size: 1.1rem;
+        line-height: 1.72rem;
         padding-left: 0.07vw;
-        margin: 0 0;
+        margin: 1.2rem 0;
     }
     
     section a {
         display: block;
         background-color: white;
         color: hsl(257, 40%, 49%);
-        width: 13.85vw;
-        height: 3.9vw;
+        width: 12.5rem;
+        height: 2.7rem;
         border-radius: 3.6rem;
-        font-size: 1.27vw;
+        box-shadow: 0 0.3rem 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
+        font-size: 1.1rem;
         text-align: center;
         text-decoration: none;
-        margin: 3.1vh 0.07vw 1vh;
-        padding-top: 1.6vh;
+        margin: 1.5rem 0.07rem 1rem;
+        padding: 0.8rem 0 0 0;
+    }
+
+    section a:active {
+        box-shadow: none;
+        transform: translateY(0.1rem);
     }
 }
 
@@ -201,18 +219,62 @@ footer {
 }
 
 .attribution { 
-    opacity: 0; 
-    font-size: 11px; 
-    text-align: center; }
-
-.attribution:hover {
-    opacity: 1;
+    font-size: 0.1rem; 
+    text-align: center; 
+    margin: 0.8rem auto 0;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
+    footer {
+        width: 95.3%;
+        text-align: right;
+        margin-top: 0rem;
+    }
     
+    .icon {
+        display: inline-block;
+        width: 1.4rem;
+        height: 1.4rem;
+        border: 0.095rem solid whitesmoke;
+        box-shadow: 0 0.1rem rgba(0, 0, 0, 0.1), inset 0 0.1rem rgba(0, 0, 0, 0.1);
+        color: white;
+        border-radius: 50%;
+        margin-left: 0.6rem;
+    } 
+    
+    .fb {
+        font-size: 1.2rem;
+        padding: 0.35rem 0.8rem 0.55rem 0.1rem;
+    }
+
+    .twitter {
+        font-size: 1.2rem;
+        padding: 0.4rem 0.5rem 0.5rem 0.4rem; 
+    }
+    
+    .insta {
+        font-size: 1.2rem;
+        padding: 0.25rem 0.6rem 0.65rem 0.3rem;
+    }
+
+    .attribution { 
+        position: absolute;
+        top: 60%;
+        left: 84%;
+        width: 30%; 
+        font-size: 0.5rem; 
+        text-align: center;
+        transform: rotate(0.75turn);
+        padding: 0 0;
+        margin: 0 0;
+    }
+
+    .attribution a {
+        padding: 0 0; 
+        margin: 0 0; 
+    }
 }
